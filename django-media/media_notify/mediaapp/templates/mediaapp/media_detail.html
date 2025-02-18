@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File 2</title> 
+        <script>
+            function closeWindow() {
+                setTimeout(function() {
+                    window.close();
+                },1000); // two seconds
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div align="center">
+            <h2>{{ media.title }}</h2>
+            {% if media.media_type == 'pdf' %}
+                <embed src="{{ media.file.url }}" type="application/pdf" width=55%>
+            {% elif media.media_type == 'image' %}
+                <embed src="{{ media.file.url}}" alt="{{ media.title }}" width=55%>
+            {% endif %}
+            <br>
+            <button onClick="closeWindow()">Close this window</button>
+
+            <br>
+            <p>{{media.title}} - Status: {{media.status}}</p>
+            <br>
+            {% if user.is_authenticated and user.groups.all.0.name == "admin_group" %}
+                    <a href="{% url 'approve_document' media.id %}">Approve</a>
+                    <br><br>
+                    <a href="{% url 'reject_document' media.id%}">Reject</a>
+            {% endif %}
+
+
+
+            
+        </div>            
+    </body>
+</html>
+
+
+
