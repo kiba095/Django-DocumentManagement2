@@ -92,9 +92,9 @@ class MediaFileAdmin(admin.ModelAdmin):
     approve_files.short_description = "Approve selected media files"
     reject_files.short_description = "Reject selected media files"
 
-admin.site.site_header = "My Custom Admin Header"
-admin.site.site_header = "My Custom Admin Header"
-admin.site.index_title = "Welcome to my Custom Admin"
+#admin.site.site_header = "My Custom Admin Header"
+#admin.site.site_header = "My Custom Admin Header"
+#admin.site.index_title = "Welcome to my Custom Admin"
 
 admin.site.register(Notification,NotificationAdmin)
 admin.site.register(MediaFile,MediaFileAdmin)

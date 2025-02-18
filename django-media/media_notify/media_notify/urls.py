@@ -25,6 +25,7 @@ admin.site.site_title = "SeniorHS Admin Portal"
 admin.site.index_title = "Welcome to the Portal "
 
 urlpatterns = [
+
     path('admin/', admin.site.urls,name='admin'),
     path('notifications/',notifications,name='notifications'),
     path('mediaapp/',include('mediaapp.urls')),
