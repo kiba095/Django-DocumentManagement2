@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-admin.site.site_header = "Document Management"
+admin.site.site_header = "Committee Document Approval"
 admin.site.site_title = "SeniorHS Admin Portal"
 admin.site.index_title = "Welcome to the Portal"
 

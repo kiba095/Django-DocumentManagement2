@@ -50,12 +50,12 @@ class MediaFileAdmin(admin.ModelAdmin):
 
 
 
-    fieldsets = [
-        ("Section title", {
-            "classes": ("collapse", "expanded"),
-            "fields": ("title","remarks"),
-        }),
-    ]
+    #fieldsets = [
+    #    ("Form", {
+    #        "classes": ( "collapse","expanded"),
+    #        "fields": ("title","remarks","file","status","media_type"),
+    #    }),
+    #]
 
     
 
