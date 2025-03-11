@@ -1,0 +1,27 @@
+{% extends "admin/base_site.html" %}
+{{ block.super }}
+
+{% block extrahead %}
+
+    <script>
+        /*alert("Nothing to Show Here Click the button to redirect to the login site");*/
+
+        function closeWindow() {
+            setTimeout(function() {
+                window.close();
+            },500); // two seconds
+        }
+
+    </script>
+
+{% endblock %}
+{% block content %}
+
+      <!--Back Button-->
+      <div style="margin-top:20px" align="center">
+        <br><br>
+        <p>"Nothing to Show Here Click the button to redirect to the login site"</p><br><br>
+        <a href="{% url 'admin:app_mediafile_changelist' %}" class="button">Redirect</a>
+    </div> 
+
+{% endblock %}

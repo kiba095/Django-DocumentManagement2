@@ -1,2 +1,2 @@
-# Django-DocumentManagement2
- additional styling for the admin-interface
+# Django-DocumentManagement4
+ version4 of document management

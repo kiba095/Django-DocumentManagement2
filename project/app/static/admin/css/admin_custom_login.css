@@ -1,0 +1,21 @@
+.custom-login-container {
+    text-align: center;
+    margin-top:50px;
+}
+
+.custom-logo {
+    width: 150px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+#btn-login {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

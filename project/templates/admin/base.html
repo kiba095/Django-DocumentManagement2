@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html"%}
+{% load static %}
+{% load custom_tags %}
+
+{% block userlinks %}
+    {{ block.super }}
+
+    <a href="{% url 'admin:app_notification_changelist' %}" class="notifications">
+    
+        &#128276;
+        Notifications
+        <span class="badge">{% get_notification_count request.user.username %}</span>
+    </a>
+    <style>
+        .notifications {
+            margin-left:15px;
+            font-weight:bold;
+            color:red;
+        }
+        {% if get_notification_count > 0 %}
+        .badge {
+            background-color:red;
+            color:white;
+            border-radius:50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+        {% endif %}
+    </style>
+
+{% endblock %}

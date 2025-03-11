@@ -1,0 +1,6 @@
+<h2>Notifications</h2>
+{% for notificationin notifications %}
+    <p>{{ notification.message }}</p>
+{% empty %}
+    <p>No new notifications.</p>
+{% endfor %}

@@ -1,0 +1,40 @@
+    
+    10,000 php (march 1-15 2025) Phase 1
+    ^Create diagrams to be followed in this project. 
+    ^Create the base_user_dashboard (main body of the webapp).
+    ^Create the document_list_page,where the user can view.add.delete.edit their uploads.
+    ^Create a demo_view button to view the uploaded document(pdf/image) listed on document_list_page.
+    ^Create the notification_list_page, where user can view.delete their notification.
+    (only crud app, theres no notification functionality yet.)
+    ^Create a login-logout_pages authentication where the user must be logged-in to operate/access 
+    the web pages.
+    ^Create an initial submit_form_page for uploading documents for the users/commitees.
+    ^Create user-accounts for the system (commitees/principals) roles.
+    ^Create a one-click-run script to easily deploy localhost on pc.
+    
+    10,000 php (march-15-april-30) Phase 2
+    ^Create a document_decision_page's where imageviewer_js for the uploaded images has a zoom-in-out and pan functionality for better admin observation.
+    ^Create a document_decision_page's pdfviewer to view pdf_files.
+    ^Create filter_individual_pages for the users with their own specific content(see only their content not others).
+    ^Create a document_decision_page's pending,approval and rejected form for admin/principal.
+    ^Redesign UI for responsive webpages
+    ^Create the notification_function inside the webapp for both users/commitee and admin/principal if the status 
+    of the document changes
+    ^Create a filter_list of approved,rejected and pending on document_lists
+    ^Put the logo of school, change titles brands and main color theme picked for the webapp.
+    *On userrole the Principal has two accounts, account for comittee_group and account member for approving files.
+    *On userrole a Commitee member has only one account where they only manage their uploaded document.  
+
+    8,000 php (optional addons)(pay to add) (end of april)
+    ^Create webapp admin-interface-custom template for customization of its ui, rather than code-it manually (wordpress cms alike)
+    ^Create a document_list_page's import/export plugin in json or csv format(for data field backups).
+    ^Create a document_list_page's approved_files_downloader plugin if admin wants to download the approved media documents.
+    ^Create a document_list_page's multiple approved/disaaproved plugin for mass change,instead of one-by-one newtab approve
+    ^Create a document_list_page's search_field plugin where admin/principal can search fname,username,lasname,title_of_document,uploaded_date. 
+    ^Create a document_list_page's filter_by_type besides the approved_disapprove_pending filter.
+    ^Create a django-fake login for security purposes 
+    ^Create a new role named superadmin  where it has access to all data and can add.delete.update user informations.
+
+    2,000 php (optional addons)(pay to add)
+    ^Add nameservers, config dns for readable address instead of using 127.0.0.1/localhost you can just type yourapp.example.com
+    ^Deploy it on vps,hosting websites, or a local server like pc or raspberrypis, or any network that has accesspoint.

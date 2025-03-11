@@ -1,0 +1,51 @@
+.custom_color{
+    color: green;
+}        
+
+body {
+    background-color: #f4f4f4;
+}
+.change_list {
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+#btn-save {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    /*padding: 10px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /*font-weight: bold;*/
+}
+
+#btn-delete {
+    background-color: #f4436f;
+    color: white;
+    border: none;
+    /*padding: 10px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /*font-weight: bold;*/
+}
+
+#btn-save-continue {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    /*padding: 10px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /*font-weight: bold;*/
+}
+
+#btn-save-add-another {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    /*padding: 10px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+    /*font-weight: bold;*/
+}
