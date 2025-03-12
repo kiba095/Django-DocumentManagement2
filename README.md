@@ -34,4 +34,4 @@ Accomplishment List
 
 extra addons
 1. added search_field for the document list
-2. added create a multiple approve, reject documents in action_button
+2. added a multiple approve, reject documents in action_button
