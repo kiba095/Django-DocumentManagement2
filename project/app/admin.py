@@ -14,6 +14,7 @@ import mimetypes
 
 class NotificationAdmin(admin.ModelAdmin):
     list_display = ('recipient','message','created_at','is_read')
+    #search_fields = ['message',]
 
     def get_model_perms(self, request):
         ''' Hide the NotificationModel in the django-admin'''
@@ -47,7 +48,7 @@ class MediaFileAdmin(admin.ModelAdmin):
     list_filter = ('status',)
     actions = ['approve_files','reject_files']
     ordering = ('-uploaded_at',)
-
+    search_fields = ["title","status","media_type",]
 
 
     #fieldsets = [

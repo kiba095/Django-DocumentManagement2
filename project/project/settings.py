@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'admin_interface',
-    #'colorfield',
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
 ]
+LOGOUT_REDIRECT_URL = '/admin/login/'
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1",
+    "http://localhost",
+]
+
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / 'media'

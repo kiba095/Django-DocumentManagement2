@@ -1,9 +1,7 @@
 {% extends "admin/change_list.html" %}
 {% load static %}
 
-{% block breadcrumbs %}
-<br>
-{% endblock %}
+
 {% block extrastyle %}
     {{ block.super }}
    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/admin_custom_changelist.css' %}">

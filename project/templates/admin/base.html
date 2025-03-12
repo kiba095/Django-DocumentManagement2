@@ -3,7 +3,16 @@
 {% load custom_tags %}
 
 {% block userlinks %}
-    {{ block.super }}
+    <!--<a href="#">WELCOME <strong>{{request.user.username}}</strong></a>/-->
+    {% if request.user.is_authenticated %}
+    &#128512;
+    <a href="{% url 'admin:app_mediafile_changelist'%}"class="notifications">
+        &#128195;
+        DOCUMENT LIST
+    </a>
+  
+ 
+    <!--{{ block.super }} remove default navigation links-->
 
     <a href="{% url 'admin:app_notification_changelist' %}" class="notifications">
     
@@ -11,6 +20,16 @@
         Notifications
         <span class="badge">{% get_notification_count request.user.username %}</span>
     </a>
+    
+    <a href="{% url 'admin:password_change'%}"class="notifications">&#128273; CHANGE PASSWORD</a>
+   
+    <a onclick="document.getElementById('logoutForm').submit(); return false;" class="notifications"> &#128682; LOG-OUT</a>
+    <form id="logoutForm" action="{% url 'admin:logout'%}" method="post">
+        {% csrf_token %}
+    </form>
+    
+    {% endif %}
+
     <style>
         .notifications {
             margin-left:15px;
