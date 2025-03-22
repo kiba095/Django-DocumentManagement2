@@ -2,10 +2,16 @@
 {% load static %}
 {% load custom_tags %}
 
+{% block welcome-msg %}
+    <p class="usr" style="font-size:15px;">&#128512; Welcome, <strong style="font-weight:bold;"> {% firstof user.get_short_name  %}</strong></p>
+
+{% endblock %}
+
 {% block userlinks %}
-    <!--<a href="#">WELCOME <strong>{{request.user.username}}</strong></a>/-->
+    <!--<a href="#">WELCOME</a>/-->
+
     {% if request.user.is_authenticated %}
-    &#128512;
+    
     <a href="{% url 'admin:app_mediafile_changelist'%}"class="notifications">
         &#128195;
         DOCUMENT LIST
@@ -43,6 +49,11 @@
             border-radius:50%;
             padding: 2px 6px;
             font-size: 12px;
+        }
+        .usr {
+            color: white;
+            font-weight:bold;
+            font-size: 33px;
         }
         {% endif %}
     </style>

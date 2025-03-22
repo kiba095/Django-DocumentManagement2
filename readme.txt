@@ -1,6 +1,6 @@
 The principal is member of the commitee so he/she has two accounts
 	
-	user: staff1 (the uploader)
+	user: com1 (the uploader) -> School Head
 	pass: demo1234
 
 	user: principal (the approver)
@@ -9,10 +9,12 @@ The principal is member of the commitee so he/she has two accounts
 The Members of the Commitee will have only on account (uploaders)
 
 	user:	pass:
-	staff2	demo1234
-	staff3	demo1234
-	staff4	demo1234
-	staff5	demo1234
+	com2	demo1234 -> Leadership
+	com3	demo1234 -> Internal Stakeholders
+	com4	demo1234 -> External Stakeholders
+	com5	demo1234 -> School Improvement Resources
+	com6	demo1234 -> School-Based Resources
+	com7	demo1234 -> School Performance Accountability
 
 This users can change their own password in the dashboard(upperright corner).
 This type of scheme is created base sa diagrams.
@@ -20,7 +22,7 @@ This type of scheme is created base sa diagrams.
 
 Phase 2 will begin in March 16-30.
 
-10,000 php (march-15-april-30) Phase 2
+(march-15-april-30) Phase 2
 ^Create a document_decision_page's where imageviewer_js for the uploaded images has a
 zoom-in-out and pan functionality for better admin observation.
 ^Create a document_decision_page's pdfviewer to view pdf_files.

@@ -21,8 +21,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
-admin.site.site_header = "Committee Document Approval"
-admin.site.site_title = "SeniorHS Admin Portal"
+admin.site.site_header = "MOV Submission Repository"
+admin.site.site_title = "MOV Portal"
 admin.site.index_title = "Welcome to the Portal"
 
 from django.contrib import admin
