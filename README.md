@@ -22,10 +22,8 @@ The Members of the Commitee will have only one account (uploaders)
 This users can change their own password in the dashboard(upperright corner).
 This type of scheme is created base sa diagrams.
 
+Accomplishments
 
-Phase 2 will begin in March 16-30.
-
-(march-15-april-30) Phase 2
 1. Create a document_decision_page's where imageviewer_js for the uploaded images has a
 zoom-in-out and pan functionality for better admin observation.
 2. Create a document_decision_page's pdfviewer to view pdf_files.
