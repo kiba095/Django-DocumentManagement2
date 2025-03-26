@@ -37,10 +37,6 @@ not others).
 if the status of the document changes
 7. Create a filter_list of approved,rejected and pending on document_lists
 8. Put the logo of school, change titles brands and main color theme picked for the webapp.
-a. On userrole the Principal has two accounts, account for comittee_group and account member
-for approving files.
-b. On userrole a Commitee member has only one account where they only manage their
-uploaded document.
 
 extra addons
 1. added search_field for the document list
