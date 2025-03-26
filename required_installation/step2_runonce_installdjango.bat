@@ -3,7 +3,8 @@
 echo requires internet to install...
 echo installing Django...
 
-pip install Django
+pip install Django django-admin-interface
+
 if %errorlevel% equ 0 (
 	echo Django installed sucessfully!
 ) else (
